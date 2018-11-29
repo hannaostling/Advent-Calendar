@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B5EF5A6821B0308700895E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5A6721B0308700895E42 /* AppDelegate.swift */; };
-		B5EF5A6A21B0308700895E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5A6921B0308700895E42 /* ViewController.swift */; };
 		B5EF5A6D21B0308700895E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EF5A6B21B0308700895E42 /* Main.storyboard */; };
 		B5EF5A6F21B0308C00895E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5EF5A6E21B0308C00895E42 /* Assets.xcassets */; };
 		B5EF5A7221B0308C00895E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5EF5A7021B0308C00895E42 /* LaunchScreen.storyboard */; };
 		B5EF5A7D21B0308C00895E42 /* God_JulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5A7C21B0308C00895E42 /* God_JulTests.swift */; };
 		B5EF5A8821B0308C00895E42 /* God_JulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5A8721B0308C00895E42 /* God_JulUITests.swift */; };
+		B5EF5A9C21B046B400895E42 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5A9B21B046B400895E42 /* StartViewController.swift */; };
+		B5EF5A9E21B05F0800895E42 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5A9D21B05F0800895E42 /* DetailViewController.swift */; };
+		B5EF5AA121B064B700895E42 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EF5AA021B064B700895E42 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		B5EF5A6421B0308700895E42 /* God Jul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "God Jul.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EF5A6721B0308700895E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5EF5A6921B0308700895E42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5EF5A6C21B0308700895E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5EF5A6E21B0308C00895E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5EF5A7121B0308C00895E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		B5EF5A8321B0308C00895E42 /* God JulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "God JulUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5EF5A8721B0308C00895E42 /* God_JulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = God_JulUITests.swift; sourceTree = "<group>"; };
 		B5EF5A8921B0308C00895E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5EF5A9B21B046B400895E42 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		B5EF5A9D21B05F0800895E42 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B5EF5AA021B064B700895E42 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B5EF5A6621B0308700895E42 /* God Jul */,
+				B5EF5A9A21B0456800895E42 /* Other */,
 				B5EF5A7B21B0308C00895E42 /* God JulTests */,
 				B5EF5A8621B0308C00895E42 /* God JulUITests */,
 				B5EF5A6521B0308700895E42 /* Products */,
@@ -97,12 +102,9 @@
 		B5EF5A6621B0308700895E42 /* God Jul */ = {
 			isa = PBXGroup;
 			children = (
-				B5EF5A6721B0308700895E42 /* AppDelegate.swift */,
-				B5EF5A6921B0308700895E42 /* ViewController.swift */,
-				B5EF5A6B21B0308700895E42 /* Main.storyboard */,
-				B5EF5A6E21B0308C00895E42 /* Assets.xcassets */,
-				B5EF5A7021B0308C00895E42 /* LaunchScreen.storyboard */,
-				B5EF5A7321B0308C00895E42 /* Info.plist */,
+				B5EF5A9F21B064AE00895E42 /* Model */,
+				B5EF5A9821B0454D00895E42 /* View */,
+				B5EF5A9721B0454400895E42 /* Controller */,
 			);
 			path = "God Jul";
 			sourceTree = "<group>";
@@ -123,6 +125,43 @@
 				B5EF5A8921B0308C00895E42 /* Info.plist */,
 			);
 			path = "God JulUITests";
+			sourceTree = "<group>";
+		};
+		B5EF5A9721B0454400895E42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF5A9B21B046B400895E42 /* StartViewController.swift */,
+				B5EF5A9D21B05F0800895E42 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B5EF5A9821B0454D00895E42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF5A6B21B0308700895E42 /* Main.storyboard */,
+				B5EF5A7021B0308C00895E42 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B5EF5A9A21B0456800895E42 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF5A7321B0308C00895E42 /* Info.plist */,
+				B5EF5A6E21B0308C00895E42 /* Assets.xcassets */,
+				B5EF5A6721B0308700895E42 /* AppDelegate.swift */,
+			);
+			name = Other;
+			path = "God Jul";
+			sourceTree = "<group>";
+		};
+		B5EF5A9F21B064AE00895E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5EF5AA021B064B700895E42 /* Model.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5EF5A6A21B0308700895E42 /* ViewController.swift in Sources */,
+				B5EF5A9E21B05F0800895E42 /* DetailViewController.swift in Sources */,
 				B5EF5A6821B0308700895E42 /* AppDelegate.swift in Sources */,
+				B5EF5A9C21B046B400895E42 /* StartViewController.swift in Sources */,
+				B5EF5AA121B064B700895E42 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
